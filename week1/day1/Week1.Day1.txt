@@ -1,0 +1,22 @@
+Week1 Day1 - Agenda 
+
+    # Course Introduction & EdTech Walkthrough - 9:30 to 10:00 AM
+    # Connect with Mentors - 10:00 to 10:15 AM
+    # Core Java Introduction - 10:15 to 11:15 AM
+    # Classroom - 15 mins
+    # Datatypes & Variables - 11:30 to 12:15 AM
+    # Classroom - 15 mins
+
+
+    Steps to create a Maven Project
+    1. File -> New -> Project -> Maven Project
+    2. Click Next -> Click on Create a simple project checkbox
+    3. Enter Group Id -> organiztion name
+    4. Enter Artifact Id -> Project Name
+    5. Click Finish
+
+    Steps to create a Package
+    Right click on src/main/java -> New -> Package
+
+    Steps to create a Class
+    Right click on Package -> New -> Class
