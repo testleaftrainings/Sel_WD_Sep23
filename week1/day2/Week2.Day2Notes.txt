@@ -1,0 +1,71 @@
+Agenda Week1 Day2
+
+    09:15 to 09:30 AM   : Warm Up
+    09:30 to 10:00 AM   : Data Types
+    10:00 to 10:15 AM   : Classroom + break
+    10:15 to 11:15 AM   : Operators & Control Statements
+    11:15 to 11:30 AM   : Classroom + break
+    11:30 to 12:30 PM   : Methods & Objects
+    12:30 to 12:45 PM   : Classroom 
+
+
+    Data Types
+
+    Variable -> a placeholder for a value 
+    Data Type -> specifies which type of value a variable can hold
+
+    To define a variable
+        1. Declaration -  int  age   
+        2. Assignment -   age = 25;
+        3. Initialization - int age = 25;
+
+    datatype  variableName = value;
+    variableName - camelCase
+    numOfYears - camelCase
+    NumOfYears - PascalCase
+
+
+    Operators
+        = --> Assignment operator that assigns the value to your variable
+    1. Arithmetic Operators
+        Addition:  +      25+5 = 30
+        Subtraction: -    25-5 = 20
+        Multiplication: * 25*5 = 125
+        Division: /       25/5 = 5  Quotient
+        Modulus: %        25%5 = 0  Remainder
+                          25%3 = 1 
+    2. Comparison Operators - used to compare the values
+        equal to       ==   25 == 5 -->false
+        not equal to   !=   25!=5 --> true
+        greater than   >    25>5 --> true
+        greater than equal  >=   25>=25 --> true
+        less than      <    5<25 --> true
+        less than or equal  <=   5<=25 ---> true
+
+
+Control Statements
+If else 
+    the execution of your program is based on the condition - whether it is true or false
+
+    Traffic Light - red, yellow, greeen
+     if (traffic light is red)
+            Stop your vehicle
+
+    if (traffic light is yellow)
+        Slow down your vehicle
+    
+     if (traffic light is green)
+        Move
+
+
+for loop
+  for(int Initialization; condition; increment ){
+
+    syso()
+  }
+
+  for(int i = 0; i < 5; i++){
+
+    print("5");
+    incrementation                     O/P 5
+  }
