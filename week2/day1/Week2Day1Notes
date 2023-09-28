@@ -1,0 +1,149 @@
+			
+		Week1 Day4 Agenda
+
+			Let's get started!
+
+				# Selenium Archirecture & Fundamentals
+				# Launch browsers
+				# HTML Basics 
+
+			Dig deep into Selenium!
+
+				# Selenium Locators and methods
+				# Login automation
+				# Other Se Locators and methods
+				# Locator Strategies
+
+		Week2 Day1 Agenda
+
+				# Se Locators - Quick recap
+				# Selenium Dropdown
+				# XPath 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+What is Selenium
+		- Functional User Interface automation tool / library / framework
+		- open source
+		- primarily used for web automation - automating your web applications
+
+		- Selenium can only automate browsers
+
+		- Selenium can interact with multiple browsers and different browser versions - 
+				Chrome, Firefox, Safari, Edge, IE, Opera
+
+		- Se supports different programming languages - Java, Python, JS, Ruby, C#, C++
+		- Se do not talk to databse directly (you can use JDBC)
+
+To check your drivers in the local system - .cache
+To check the dependencies internally in your system - .m2
+
+**************************************************************************************************
+DOM - document object model
+
+To open the DOM - Right click --> Inspect
+ctrl+shift+I
+F12
+3 dots on the browser --> More Tools --> Developer Tools
+
+<input class="inputLogin" type="text" id="username" name="USERNAME" size="50">
+
+tagName - purple (input, div, span, label, button) - what type of element it is
+attributes - brown (class, id, size, name, type) - before =
+attribute values - blue --> after =
+text - black --> between the tags
+
+Locators are used to locate the particular web element
+Web element - individual element on a web page that can be interacted with using WebDriver
+
+There are 8 type of locators
+
+Locator Preferences
+
+1. id
+2. name
+3. className
+
+
+
+
+4. linkText
+
+5. tagName
+6. partialLinkText
+7. XPath
+8. CSS selectors
+
+
+Exception - NoSuchElementException --> whenever you try to access or interact with a web element which
+										is not present in the web page
+
+
+LeafTaps Application
+
+1. Initialize the driver
+2. Load the url http://leaftaps.com/opentaps/control/main
+3. Maximize the window
+4. Enter username
+5. Enter password
+6. Click Login
+7. Get the text of Welcome Demosalesmanager using tagName
+8. Click CRM/SFA
+9. Get the title of the page
+10. Close the window
+
+
+What is a dropdown according to Se?
+	- If the element has the tag <select
+	- Select will have multiple <option tags (for every dropdown option)
+
+Steps to handle the dropdown
+
+1. Find WebElement --> Convert to Select class
+2. Using Select class --> Choose the dropdown option
+
+Select Methods
+1. selectByIndex - index starts at 0 (random data)
+2. selectByVisibleText - the text on the option element - one language
+3. selectByValue - the attribute (value) on the option - multilingual
+
+
+WebElement Methods & WebDriver Methods
+
+WebElement Methods
+	sendKeys() - type or perform key actions on the input fields
+	click() - click a button / input / link / content
+	clear() - clears the existing content in the text
+	getText() - get the text in the element --> text is present between the tags
+	getAttribute() - get the attribute's value in the element
+
+
+WbDriver Methods
+	get() - load the url
+	close() - close the browser
+	findElement() - locates the element
+	getTitle() - Title of the web page
+	getCurrentUrl() - URL of the active browser
+
+
