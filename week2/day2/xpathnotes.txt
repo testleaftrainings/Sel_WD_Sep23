@@ -1,0 +1,121 @@
+Agenda:
+-------
+Id
+name
+classname
+linktext
+partial linktext
+tagname
+
+Xpath
+ -->XML path
+ -->Address of the webElement
+
+Basic Xpath 
+   directly locating the element with its address
+   
+   Absolute Xpath-->white board--stops in all location
+                 -->long path /complete address
+				 -->starts with / and root element of the DOM
+				 -->/html
+				 
+				 Example: Leaftaps appln:
+				 
+				 /html/body/div[2]/div[2]/div/form/p/input 
+				 
+				 Not recommended  -->as it is not reliable
+				 
+   Relative xpath: Point to Point bus (Short path)
+   ---------------
+   -->starts with // and with current node of the WebElement
+   syntax:(General syntax)
+   //tagname(optional -->using the attributes/text of the particular webElement)
+   
+   5 ways/types 
+   -------------
+   1.Attribute based Xpath
+   ------------------------
+   syntax:
+   //tagname[@attribute='attributeValue']
+   //input[@id='username']   
+   
+   2.Text-Based xpath
+   -------------------
+    -->should be used -->when the element having Black text
+	syntax:
+	-------
+	//tagname[text()='textValue']
+	//span[text()='Shop now']
+	//label[text()='Username']
+
+	3.Partial Attribute based
+	-------------------------
+	sysntax:
+	//tagname[contains(@attribute,'partial attribute Value')]
+	
+	//div[contains(@class,'gw-col')]
+	
+	4.Partial Text based
+	--------------------
+	syntax:
+	//tagname[contains(text(),'partial textvalue')]
+	//h2[contains(text(),'Gaming')]
+	
+	5.Collection based Xpath:
+	-------------------------
+	syntax:
+	-------
+	(relative xpath)[index]
+	(//h2[contains(text(),'accessories')])[2]
+	(//input[@class='inputLogin'])[2]
+   
+   limitations-->Cannot use index more than 6    
+   
+   classroom:
+---------
+Find the xpath 
+https://www.nykaa.com/    -> Search box  using (name) attribute
+https://www.swiggy.com/   -> Text based (food button)
+https://www.axisbank.com/ -->Partial attribute based xpath(Login button)
+https://www.amazon.in/	--> Partial text based xpath (Bluetooth Calling)
+   
+   
+
+Advanced Xpath: -->Relationship based/Axes Xpath(8 types)
+ -->in relation with other element
+ 
+ Parent Child(top to bottom)
+ ------------
+  
+  syntax:
+  ------
+  (Any relative xpath of the parent )/tagname of the child
+                                        optional -->relative xpath
+  //p[@class='top']/input[@id='username']
+    
+ Child -Parent:(bottom to top)
+ -------------
+ syntax:
+ ------
+ (Any relative xpath of Child)/parent::tagName of Parent
+ //input[@type='password']/parent::p
+  
+ GrandParent to GrandChild(top to bottom)
+ --------------------------
+ (Any Relative xpath of GrnadParent)//tagName of grandChild
+ (//form[@id='login']//label)[2]
+ //div[@class='whitebg d-inline-block']//a[text()='Explore Products']
+ 
+ 
+ GrandChild to GrandParent(bottom to top)
+ ----------------------------------------
+ syntax: 
+ (Any relative xpath of Grandchild )/ancestor::tagName
+ 
+ //a[text()='Explore Products']/ancestor::div
+ 
+ 
+ 
+
+ 
+ 
