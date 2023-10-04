@@ -1,0 +1,90 @@
+Agenda:
+
+9.30AM to 10.00AM    -Advanced Xpath
+10.00Am to 10.20AM   -Implicit Wait
+10.20AM to 10.30AM   -Break
+10.30AM to 11.00AM   -Basic String
+11.00 AM to 11.20AM  -Classroom
+11.20 AM to 12.20AM  -String Methods
+12.20 AM to 12.30AM  -Recap /Quiz
+
+Sibiling 
+ -------
+ 2ways
+ Elder Sibling to Younger sibling
+ --------------------------------
+ syntax:
+ ------
+ (relative Xpath)/following-sibling::tagname of younger 
+ Example:
+ -------
+ //label[text()='Username']/following-sibling::input
+ //div[@id='title_feature_div']/following-sibling::div[@id='averageCustomerReviews_feature_div']
+ 
+ Younger Sibling to Elder Sibling (bottom to top)
+ -----------------------------------------------
+ syntax:
+ -------
+ (relative Xpath)/preceding-sibling::tagname of Elder 
+ 
+ Example:
+ //input[@id='username']/preceding-sibling::label
+
+Cousin:
+------
+ 2 ways/types
+ ------------
+ Elder to younger(Top to bottom)
+ syntax:
+ -------
+ (relative xpath of Elder)/following::tagNmae of younger
+ 
+ //input[@id='username']/following::input
+ 
+ //label[@for='username']/following::input
+ 
+ 
+ Younger to elder(Bottom)
+ --------------------------
+ 
+ (relative Xpath)/preceding::tagname of Elder 
+ 
+ Example: 
+ //input[@class='decorativeSubmit']/preceding::label
+ 
+
+ 
+ Implicit Wait:
+ --------------
+ 
+ NoSuchElement Exception-->when locator value is wrong
+ StaleElemntException -->absence of element in DOM
+ 
+  Implicit Wait -->Global wait
+                -->applicable on all findElement /findElements
+				
+				if the element is found in 2 s -->driver will not wait for remaining sec (13sec)
+ 
+
+String:
+------
+   Set of characters
+   Sequence of Characters
+   Class /non primitive data type -->requires reference
+   
+   int[] a={1,2,3,4}
+   
+   String -->immutable class
+           --once declared -->cannot change the value
+String  ->
+Declaration
+
+Literal way
+using Instance ->object (using new keyword)
+Difference  -->usage memory 
+		   
+Heap memory -->space will be allocated when there is creation of Object	 (new keyword)
+       
+String as literal -->stored in a special memory of Heap Memory -->string pool memory	   
+		   
+		   
