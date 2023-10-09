@@ -1,0 +1,67 @@
+Agenda:
+------
+9.30AM to 10.30AM   -Abstraction -Interface
+10.30AM to 10.50AM  -Abstract class
+10.50AM to 11.10AM  -Classroom
+11.10AM to 11.20AM  -Break
+11.20AM to 12.20PM  -Collection-List
+12.20PM to 12.35PM  -Classroom
+----------------------------------------------
+
+Abstraction
+-----------
+   -hiding the details
+   
+   MOM -->brief -->high level info
+   abstract ->paining -->design 
+   plan -->design 
+   
+   Two similar classes can be extended (build relationship between two similar class)
+   
+   Abstraction -->hiding the interanal details and showing the required features to the user
+   --------------
+    Interface -->class 
+	  -->100% abstraction
+	  -->design
+	
+	Class extends class
+	Interface extends interface
+	----------------------------------------------------
+	
+	Abstract class:
+	--------------
+	 -->0 to 100% of abstraction
+	 -->both implemented and unimplemented method
+	 
+	 Interface extends Interface
+	 abstract class extends abstract class
+	 abstract class implements interface
+	 class implements interface
+	 class extends the class
+	 -----------------
+	 ways to use abstract class and implentation
+	 -------------------------------------
+	 Class extends abstract implements interface
+	 abstract implements interface
+	 class extends the abstract class
+	 
+	 
+	 Amazon -->concrete class extend Abstractclass (canarabank)
+	 canarabank implements interface payments
+	 
+	 
+	 Collection:  -->interface
+	 ----------
+	    ->store data
+		
+		Array --> multiple data of same dataype under a single reference
+		      --> Fixed in size
+			  
+			  
+Wrapper class -->String 
+              -->Integer -->int, long, short, byte
+			  -->character -->char
+			  -->Float -->float and double
+			  -->Boolean --> boolean
+			
+			
