@@ -1,0 +1,88 @@
+Agenda:
+------
+9.30AM to 10.15AM   -Collection-Set
+10.15AM to 10.35AM  -Classroom
+10.35AM to 10.55AM  -Break
+10.55AM to 11.45AM  -Constructor and java Keywords
+11.45AM to 12.30AM  -Map 
+--------------------------------------------------------------
+Implementation Class-List
+-------------------------
+ArrayList ,LinkedList
+
+
+List<GenricType>listName =new ArrayList<GenericType>();
+
+Collection-Set
+--------------
+ -->interface and sub interface of Collection
+ -->cannot create object
+ 
+ -->Implementation Class 
+    HashSet -->Random order (Hashing algorithm)
+	LinkedHashSet-->Insertion order
+	TreeSet-->ASCII -->alphabetical order
+	
+Set<GenericType> setName =new HashSet<GenericType>();
+   ->cannot use the get() -->requires index  
+   -->allows only unique value -->does not allow duplicate value
+   
+   Constructor:
+   -----------
+   
+   Classname obj=new Classname();
+   
+   initializes the state of the object
+   
+   Features:
+    It like a normal method but carries name of classname
+	It will not return anything
+	
+	Two types
+	--------
+	Default Constructor 
+	Parametrized Constructor
+	
+	can you call a constructor into another Constructor? 
+	    ->how do you perform constructor chaining?
+			-->acheived with the help of this keyword
+			this -->current class  -obj,method, variable,constructor
+			this.variable(instance) =variable(local) -->to resolve the ambiquity between the instance variable and local variable
+			
+static :
+------
+ something that use same memory
+ creates only one memory to share accross the classes
+ class loader ->memory is created when class loads in JVM
+ 
+ Hiererchy of exe
+ ---------------
+ static ()
+ constructor()
+ normal()
+ 
+ final keyword
+ -------------
+ constant -->value
+ 
+ ----------------------
+ s={2,3,4,5,6}
+ s=[2,3,4,5,6,7]
+ 
+ empid, empName
+ 
+ Map -->Interface 
+ Dictionary -->key -value pair
+ int string
+ int float
+ 
+ Key -->uniques
+ Values -->duplicated
+ 
+ Map<GenricType> mapname=new HashMap<Generictype>();
+ ->LinkedHashMap
+ ->TreeMap
+ 
+ 
+ 
+ 
