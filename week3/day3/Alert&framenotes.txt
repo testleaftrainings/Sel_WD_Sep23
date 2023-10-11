@@ -1,0 +1,65 @@
+Agenda:
+------
+9.30Am  to 10.40AM  -Target Locators -Alert&Browser notification
+10.40AM to 11.00 AM- Classroom
+11.00AM to 12.15PM -Target Locators-iFrame
+12.15PM  to 12.35 -Classroom
+-------------------------------
+Alert-Caution ,warning message,information,alarm
+
+Alert-->information/dialog box from application
+-----
+   -->javascript function call
+   ->it is not inspectable
+   -->cannot be ignored 
+
+
+Modal Alert
+            --->it is not inspectable
+           -->cannot be ignored 
+ -->simple Alert  --->one single option to get handled
+ -->Confirmation Alert--> two options as ok and cancel -->decision on the option
+ -->Prompt Alert -->allows to send input into the alert box and also allows to take decision on the option
+
+
+AAllowed Alert actions 
+  -->accept
+  -->reject
+  -->get the text
+  -->type in to the box
+
+
+Non Modal Alert-Sweet Alert
+          -->it is inspectable as like a webElement
+		  -->cannot be ignored
+		  
+
+Exception:
+UnhandledAlertException: alert is present 
+NoAlertPresentException: no such alert
+
+
+Frames
+------
+ -cover, outline, pictureframe, frame of the glass
+ iframe-->inline frame   
+       -->dom inside another dom
+	   -->HTML doc placed inside another HTML doc
+	   
+	Two ways to confirm the webpage having iFrame
+	->right clicking on the webelement -->view frameSource & Reload frame
+	->In DOM page -->//iframe --><iframe
+	
+	driver doesnot have the visibility of elements which is present inside the frame
+	
+	driver-->switch the focus into frame
+	3ways
+	Using index
+	using the iframe -->attribute  id ="" name=""
+	Using frame as webelement ->xpath/Axes
+	
+	
+	Exception:
+	NoSuchElementException: no such element: Unable to locate element: 
+	NoSuchFrameException: no such frame 
+	
