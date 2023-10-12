@@ -1,0 +1,49 @@
+Agenda:
+------
+9.30Am  to 10.40AM -Target Locators -WindowHandle
+10.40AM to 11.00AM -Classroom
+11.00AM to 12.00PM -Webtable
+12.00PM to 12.20PM -Classroom
+12.20PM t0 12.40PM -Actionsclass
+
+-------------------------------------
+
+Window Handle -->unique address of the browser windows/tab 
+
+How to handle multiple tabs /windows
+  -->windowHandle -id/address of the tab/window
+
+ get address of all windows using -->getWindowHandles();
+ Convert the set to list 
+ driver.switchTo().window(windowh.get(index))
+ 
+ NoSuchWindowException
+ 
+ Interview Questions:
+ 
+ diff between windowhandle vs windowHandles
+ diff between close() vs quit()
+ //how will you close all windows except the parent window?
+ //How will you close the parent window except your child window?
+
+Webtable:
+--------
+  -Tabular structure -->row and columns
+   ->schedules 
+   
+   static webtable -->fixed rows and columns
+   dynamic webtable
+<table>-->actual table 
+ <thead>-->tabular head -->Collective header columns
+   <tr>
+    <th>->tabular head-->individual column name/category
+ <tbody>-->tabular body -->actual data which the actions to be performed
+   <tr> -->table row
+   <td> -->table data-->individual cell
+
+
+
+
+
+
+
