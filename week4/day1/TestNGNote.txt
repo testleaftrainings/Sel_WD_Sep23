@@ -1,0 +1,169 @@
+Topics
+
+TestNg introduction
+Sequential and Parallel Execution
+Annotations/Attributes
+---------------------------------
+
+
+Organized
+Single execution for testcases (Modules)
+Common funtionalities can be separated
+Integration of Test data from external resources 
+To log the status of the testcases(reports )
+screenshots in the report
+Pre and Post conditions
+
+TestNg -->Execution framework /Unit Testing 
+   -->Configure the execution
+    -->to control flow execution
+TestNg -->Test Next generation
+       -->Cedric beust 
+	   ->Junit and Nunit
+
+ -->Execution to be done with one single run -->sequential /Parallel
+ -->Supports passing Multiple testdatas ->Data driven testing
+ --->status of the reports
+ -->Control the execution flow with annotations and attributes
+ -->Grouping of testcases
+ -->retry the failed testcases(Listners)
+ -->Assertion
+
+Convert the Java script into TestNG script
+------------------------------------------
+Step:1 Convert the main method into normal method
+Remove the static keyword and the String[] args from the main method
+Rename the main method into meaningful name
+Step:2 Add the @Test on top of the method
+
+
+ Steps to see the report:
+ ---------------------
+ Refresh the Project
+ Test-output folder 
+   emailable and index.html
+   
+Parallel Execution
+-------------------
+1 test <test> <classes>-3 
+ <test thread-count="5" parallel="classes" name="ParallelTest">
+    <classes>
+      <class name="testcase.DeleteLead"/>
+      <class name="testcase.CreateLead"/>
+      <class name="testcase.DuplicateLead"/>
+    </classes>
+  </test> <!-- ParallelTest -->
+  
+  
+  2 <test> parallel and 1 class in each test
+  --------------------------------------------
+  	<test thread-count="5" name="ParallelTest1">
+		<classes>
+			<class name="testcase.CreateLead" />
+		</classes>
+	</test> <!-- ParallelTest -->
+
+	<test thread-count="5" name="ParallelTest2">
+		<classes>
+			<class name="testcase.DeleteLead" />
+		</classes>
+	</test> <!-- ParallelTest -->
+ 2 <test> parallel and 2 classes in each test
+ 
+ 
+ Annotations: -->a piece of code  for the methods
+ -----------
+ 
+ @Test -->mandatory annotory -works like main method
+ 
+ 
+ Optional annotation:
+ ------------------- 
+ For Preconditions
+ ------------------
+  @BeforeSuite -reporttemplate,cloud connect
+  @BeforeTest --get the details of excel/db connections
+  @BeforeClass ->report details
+  @BeforeMethod -->precondition for each methods in the class
+  
+  For PostCondtions
+  -----------------
+  @AfterMethod-postcondtion for each method
+  @AfterClass
+  @AfterTest-close of dbconnection
+  @AfterSuite -close the connection
+ 
+ 
+ BeforeSuite
+ 
+BeforeTest
+
+BeforeClass
+
+Before Method
+Actual Testcase
+AfterMethod
+
+Before Method
+Actual Testcase2
+AfterMethod
+
+
+AfterClass
+AfterTest
+
+
+AfterSuite
+---------------------------
+ BeforeSuite
+BeforeTest
+
+BeforeClass
+
+Before Method
+Actual Testcase
+AfterMethod
+
+Before Method
+Actual Testcase2
+AfterMethod
+
+AfterClass
+AfterTest
+
+
+Actual Testcase3
+AfterSuite
+
+ 
+ 
+BeforeSuite
+BeforeTest
+
+BeforeClass
+Before Method
+Actual Testcase
+AfterMethod
+
+Before Method
+Actual Testcase2
+AfterMethod
+
+AfterClass
+
+AfterTest
+
+BeforeTest
+BeforeClass
+Before Method
+Actual Testcase3
+AfterMethod
+AfterClass
+AfterTest
+AfterSuite
+ 
+ 
+ 
+ 
+ 
+  
