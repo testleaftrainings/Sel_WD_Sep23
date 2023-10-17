@@ -1,0 +1,56 @@
+Agenda:
+Parametrization
+ Static 
+ Dynamic
+ Excel Integration
+ ----------------------------
+ Parametrization -->passing test data to the method
+ 
+ Static data -->url, Credentials,languages
+ Dynamic data -->test data with the respect to the testcase
+ 
+ Parametrization from xml file -->@Parameters
+ Parametrization from the testcase -->@DataProvider
+ 
+ 
+ Static Parametrization done from the xml
+ 
+ @Parameters
+ <parameter>
+ 
+ Step:1 Use <parameter> to set the values for the static datas in xml
+ name attribute and value attribute
+ Step:2 Use @Parameter annotation to read the data from xml
+ @Parameters({})
+ Step:3 Pass the arguments to the test step by declaring the variables in preCondition method
+ Step:4 Execute from xml file
+ 
+ 
+ CreateLead
+ 
+ Company Name			firstName			LastName
+ Testleaf				Hari				R
+ Qeagle					Babu				M
+ Testleaf				Vidya				R
+ 
+ Dynamic Parametrization:
+ Step:1 --> Declare a method named as sendData()
+ Step:2 -->Declare a two dimentional string array and set the size as 2rows and 3 cols
+ step:3 -->Assign the values to the respective array index
+ Step:4 -->annotate the sendData() with @DataProvider
+ Step:5 -->Set the attribute dataProvider="sendData" for the @Test method
+ Step:6 -->pass the arugment into test step by dec varialbles in the method
+ 
+ 
+ Step:1 Add the below dependencies in pom.xml 
+ 
+ <dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>5.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>5.1.0</version>
+		</dependency>
