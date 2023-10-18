@@ -1,0 +1,62 @@
+Agenda:
+------
+9.30AM to 10.30AM Read Excel data
+10.30Am to 10.50AM Classroom
+10.50AM to 11.10AM Integration with Script
+!1.10AM to 11.30AM Classroom
+11.30AM to 12.00PM Common Integration
+12.00PM to 12.20PM Classroom
+12.20PM to 12.45PM Attributes
+------------------
+
+
+Steps to read data from Excel file:
+------------------------------------
+
+ Step:1 Add the below dependencies in pom.xml 
+ ------
+ <dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>5.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>5.1.0</version>
+		</dependency>
+Step:2
+---------
+Add the excel file to the project with respect to the testcase
+  -Create a folder data under the project 
+  -Copy paste the excel file 
+  
+To integrate the ReadExcel with testcase
+-----------------------------------------
+Convert the main method into normal (Remove string[] args and rename it)
+Create a 2D string array with rowcount and colcount size(outside the forloop)
+Assign the string cellvalue to 2d String variable dat[i-1][j]=cellvalue
+return data and add return type to the ReadExcel method 
+
+In Test case
+------------
+Remove the harded coded data
+call the Excel method with reference to class and return the data to the sendData()
+
+Common Integration of Excel code
+-------------------------------
+Remove the dataProvider method from the individual testcase and add it to the BaseClass
+In ReadExcel -->parametrize the filename
+In BaseClass-->parametrize the filename in readExcel method call and declare the variable globally
+In Testcase -->create a method as setValue and assign the filename with respect to the testcase
+			-->annotate the method with @BeforeTest
+@BeforeSuite
+@BeforeTest
+@BeforeClass
+   @DataProvider
+@BeforeMethod
+@Test
+@AfterMethod
+@AfterClass
+@AfterTest
+@AfterSuite
