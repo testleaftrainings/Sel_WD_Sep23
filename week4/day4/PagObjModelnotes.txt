@@ -1,0 +1,88 @@
+Agenda:
+------
+Attributes 
+ActionsClass  -Mouse and Keyboard events
+Introduction to PageObjectModel
+-----------------------------------------------------
+Annotations -->execution has to be / when a piece of code to be executed 
+Attributes -->control flow  @Test 
+
+dataProvider  -->send the data to  the @Test method from the @DataProvider method
+
+prioitizing the testcases
+adding dependencies to the testcases
+categorizing the testcases
+Executing the testcase with one set of data multiple times 
+timeout 
+
+Prioritizing  -->to set the priority to the @Test methods
+ priority -->default value -->0
+ works with in the class of @Test
+ 
+ Injecting dependencies 
+ ----------------------
+  works within and between the classes
+  dependsOnMethods={"methodName",""}
+  dependsOnMethods={"packageName.classname.methodName"}
+  
+  alwaysRun ->to execute the dependent testcase without considering the status of testcase
+ set as true, default value-->false
+ 
+ enabled -->set to false to ignore the testcases from execution
+ --------
+ 
+ invocationCount -->to execute the testcases multiple times
+ 
+ timeOut
+ 
+ threadpoolSize
+
+AUI -->Advanced user interaction
+--------------------------------
+doubleclick
+rightclick
+dragging
+scrolling
+mousehovering
+
+select all the element
+
+ActionsClass ->selenium support for interactions
+
+------------------------------------------------------------------------------------
+POM -PageObjectModel
+
+Leaftaps
+ CreateLead -->6 pages
+ 
+ 
+ Steps to configure POM
+ ---------------------
+ Create project 
+ add all the dependencies
+  
+ Step:1  Create 3 packages 
+          base
+		  pages
+		  testcases
+ Step:2
+   Under base package -->create a class as ProjectSpecificMethod
+   Add the preCondition and postCondition steps 
+   And annotate the methods with @BeforeMethod and @AfterMethod respectively
+   declare the driver variabe as global static variable
+ Step:3
+  Under page package
+  Create java classes based on the page navigation and extends each page with projectSpecificMethod
+  Create methods for each action in the corresponding webpage ->action+webElement
+  
+  Method chaining
+  Page Chaining
+  
+  Add return statement to show the navigation for each method in the java classes
+  
+  Step:4 
+  Under testcase package
+   create a class for each functionality for execution 
+   Create a @Test method and call the methods for execution 
+   
+   
