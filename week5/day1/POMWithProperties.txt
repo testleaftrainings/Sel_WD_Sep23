@@ -1,0 +1,44 @@
+Today's Agenda:
+---------------
+9.30AM to 10.00AM   -Parallel configuration
+10.00AM to 10.15AM  -Classroom
+10.15AM to 10.40AM  -Data Integration
+10.40AM to 10.55AM  -Classroom
+10.55aM to 11.05AM  -Break
+11.05AM to 11.45AM  -Properties files
+11.45AM to 12.00PM  -Classroom
+12.00PM to 12.30PM  -Config Properties
+
+-----------------------------------------------------
+
+Data integration :
+ Excel data 
+ ApachePOi library
+ Excel java code
+ 
+  
+ Create a package  as utils under PageObjectModel
+ Copy paste the exisiting ReadExcel code under the utils package
+ Copy paste the code for @DataProvider in ProjectSpecificMethod
+ In CreateLead all the methods pass the arguments 
+ In CreateLead @Test pass the arguments and set the dataProvider attribute
+ 
+ 
+ Without static -->Execution is not possible  
+ 
+ With static ->parallel execution is not possible
+ 
+ 
+ Remove the static keyword from the ProjectSpecificMethod
+ Create Constructors in all page classes
+       -->Parametrize the constructor which receives the value as driver class
+ In Testcase -pass the driver object to the constructor call
+	   
+
+ -----------------------
+ Properties file
+   -->parmaetrized  -->handle multi lingual application
+ Create a 2 files with extention .properties under src/main/resources
+ Set file path in PreConditionMethod
+ Using Properties class load the files into the properties 
+ Use the prop.getProperty("key") to read the data from the properties file wherever required

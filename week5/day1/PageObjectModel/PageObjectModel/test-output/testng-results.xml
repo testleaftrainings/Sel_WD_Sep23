@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="152303" started-at="2023-10-24T11:56:14 IST" finished-at="2023-10-24T11:58:46 IST">
+    <groups>
+    </groups>
+    <test name="EnTest" duration-ms="77757" started-at="2023-10-24T11:56:14 IST" finished-at="2023-10-24T11:57:32 IST">
+      <class name="testcase.LoginFuntionality">
+        <test-method status="PASS" signature="preCondition(java.lang.String)[pri:0, instance:testcase.LoginFuntionality@355ce81c]" name="preCondition" is-config="true" duration-ms="6305" started-at="2023-10-24T11:57:08 IST" finished-at="2023-10-24T11:57:15 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[English]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="runLogin()[pri:0, instance:testcase.LoginFuntionality@355ce81c]" name="runLogin" duration-ms="15758" started-at="2023-10-24T11:57:15 IST" finished-at="2023-10-24T11:57:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runLogin -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:testcase.LoginFuntionality@355ce81c]" name="postCondition" is-config="true" duration-ms="1094" started-at="2023-10-24T11:57:30 IST" finished-at="2023-10-24T11:57:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- testcase.LoginFuntionality -->
+      <class name="testcase.CreateLeads">
+        <test-method status="PASS" signature="setFileName()[pri:0, instance:testcase.CreateLeads@5939a379]" name="setFileName" is-config="true" duration-ms="26" started-at="2023-10-24T11:56:14 IST" finished-at="2023-10-24T11:56:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setFileName -->
+        <test-method status="PASS" signature="preCondition(java.lang.String)[pri:0, instance:testcase.CreateLeads@5939a379]" name="preCondition" is-config="true" duration-ms="14460" started-at="2023-10-24T11:56:17 IST" finished-at="2023-10-24T11:56:31 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[English]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="runCreate(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcase.CreateLeads@5939a379]" name="runCreate" duration-ms="35837" started-at="2023-10-24T11:56:31 IST" data-provider="fetchData" finished-at="2023-10-24T11:57:07 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestLeaf]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hari]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[R]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[99]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runCreate -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:testcase.CreateLeads@5939a379]" name="postCondition" is-config="true" duration-ms="1024" started-at="2023-10-24T11:57:07 IST" finished-at="2023-10-24T11:57:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- testcase.CreateLeads -->
+    </test> <!-- EnTest -->
+    <test name="FrTest" duration-ms="74479" started-at="2023-10-24T11:57:32 IST" finished-at="2023-10-24T11:58:46 IST">
+      <class name="testcase.LoginFuntionality">
+        <test-method status="PASS" signature="preCondition(java.lang.String)[pri:0, instance:testcase.LoginFuntionality@625732]" name="preCondition" is-config="true" duration-ms="8043" started-at="2023-10-24T11:58:29 IST" finished-at="2023-10-24T11:58:37 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[French]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="runLogin()[pri:0, instance:testcase.LoginFuntionality@625732]" name="runLogin" duration-ms="8231" started-at="2023-10-24T11:58:37 IST" finished-at="2023-10-24T11:58:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runLogin -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:testcase.LoginFuntionality@625732]" name="postCondition" is-config="true" duration-ms="772" started-at="2023-10-24T11:58:45 IST" finished-at="2023-10-24T11:58:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- testcase.LoginFuntionality -->
+      <class name="testcase.CreateLeads">
+        <test-method status="PASS" signature="setFileName()[pri:0, instance:testcase.CreateLeads@120f102b]" name="setFileName" is-config="true" duration-ms="0" started-at="2023-10-24T11:57:32 IST" finished-at="2023-10-24T11:57:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setFileName -->
+        <test-method status="PASS" signature="preCondition(java.lang.String)[pri:0, instance:testcase.CreateLeads@120f102b]" name="preCondition" is-config="true" duration-ms="6971" started-at="2023-10-24T11:57:32 IST" finished-at="2023-10-24T11:57:39 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[French]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="runCreate(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcase.CreateLeads@120f102b]" name="runCreate" duration-ms="49210" started-at="2023-10-24T11:57:39 IST" data-provider="fetchData" finished-at="2023-10-24T11:58:28 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestLeaf]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hari]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[R]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[99]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runCreate -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:testcase.CreateLeads@120f102b]" name="postCondition" is-config="true" duration-ms="990" started-at="2023-10-24T11:58:28 IST" finished-at="2023-10-24T11:58:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- testcase.CreateLeads -->
+    </test> <!-- FrTest -->
+  </suite> <!-- Suite -->
+</testng-results>
