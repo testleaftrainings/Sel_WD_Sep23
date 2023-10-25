@@ -1,0 +1,66 @@
+Today's Agenda:
+---------------
+9.30AM to 10.15AM   -Cucumber Introduction
+10.15AM to 10.45AM  -Basic Cucumber Configuration
+10.45AM to 11.00AM  -Classroom
+10.05aM to 11.40AM  -Cucumber Execution
+11.40AM to 12.00AM  -Classroom
+11.00AM to 12.20PM  -Parametrization
+12.20PM to 12.30PM  -Classroom
+
+
+----------------------------
+Steps to configure cucumber
+--------------------------
+Pre-requisite  
+  cucumber dependencies
+  Cucumber Plugin
+  
+  Step:1 Create 3 packages as feature 
+							  stepDefinition
+							  runner
+ Step:2 Under feature package 
+         Create a file with .feature -to write BDD testcase
+
+Step:3           
+ Create Login class under stepDefinition package and implement methods for each steps
+Step:4 
+ Integrate the methods with steps using cucumber annotation
+Step:5
+ Create a RunnerClass extends AbstractTestNGCucumberTests under runner package
+Step:6
+ Apply @CucumberOption with features, glue, monochrome, publish attributes and Run from Runner class
+ 
+ 
+Cucucmber static Parametrization
+
+Steps to pass data from feature file to Step Definition methods:
+-----------------------------------------------------------------
+1. Keep the data within '' in the feature file (eg: 'Demosalesmanager')
+2. In Cucumber annotation, replace the data with {} and mention the datatype inside {}(eg: {string})
+3. Create argument in the method to get input and replace the hardcoded value with the argument
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>7.10.1</version>
+		</dependency>
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-testng</artifactId>
+			<version>7.10.1</version>
+		</dependency>
