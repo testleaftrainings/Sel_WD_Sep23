@@ -1,0 +1,67 @@
+Today's Agenda:
+---------------
+9.30AM to 10.15AM   -Cucumber Parametrization 
+10.15AM to 10.30AM  -Classroom
+10.30AM to 11.30AM  -Hooks implementation
+10.30aM to 11.50AM  -classroom
+11.50AM to 12.00PM  -Break
+12.00PM to 12.20PM  -Tags
+12.20PM to 12.30PM  -Live quiz
+
+
+Scenario Outline and Examples
+
+
+Create a feature file for createlead feature
+Use the keyword -Scenario outline
+Write the scenario for the create lead
+Use <> to parametrize the testdata in the required step
+Use the keyword Examples: to pass multiple set of data
+|| -->header
+|''|-->values
+Under Login.java
+ Create methods to map the feature step with implementation codes
+ 
+ In Runner  -->set the path for create lead feature glue with stepDefinition package
+
+Common funtionalities:
+
+Background-->common funtionalities 
+ -->will used to group the common funtionalities only with in the feature file (between the scenarios in the single feature file)
+
+Hooks Implementation:
+--------------------
+java code
+Cucumber annotation 
+@Before
+@After 
+
+
+Moved common steps into Hooks class and Comment all the lines of code in java class
+ using preCondition and postCondition and annotated the methods with @Before and @After
+ comment the Backgound steps 
+ 
+ 
+ BaseClass-->driver as global variable -->instatiated in Hooks class -->inherits baseClass
+ Login and Creadlead class -->inherits ->baseClass
+ Hooks Implementation
+ --------------------
+ Create 2 classes 
+  Baseclass -->driver variable declared as static global
+  HooksClass->Create methods as pre and post condition and annotate with @Before and After
+  extend class with BaseClass
+  In Login -->remove the common methods (launch browser and loadUrl) and extend the class with Baseclass
+  In Login Feature -->comment the common feature steps
+  
+  
+  
+  Runner extends Baseclass
+ 
+  BaseClass extends AbstractTestNGCucumberTest 
+   Move the Pre and Post Condition steps to BaseClass using TestNg annotation @BeforeMethod and @AfterMethod
+ 
+ 
+ tags -->attribute of @CucumberOptions
+ 
+ Feature level
+ scenario level
