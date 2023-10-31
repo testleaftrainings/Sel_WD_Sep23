@@ -1,0 +1,41 @@
+Today's Agenda:
+---------------
+CompileTime Exception/checked Exception
+
+Throw and throws keyword
+Introduction to Extent report
+POM with Extent Report
+Automation challenges
+
+Extent Report:
+-------------
+ Third party library -->Avenstack
+  -->html 
+ Pictorial represtation /visual representation of the status/ summmary of execution
+Pre-Condition: Add ExtentReport maven dependency in pom.xml
+Steps to integrate ExtentReport with POM:
+-----------------------------------------
+1. Create startReport() method in BaseClass with @BeforeSuite annotation
+	- Add step1 to step3 ExtentReport code
+	- Declare ExtentReports as global variable with static access modifier
+	
+2. Create testDetails() in BaseClass with @BeforeClass as annotation
+	- Add testcase details code into the method
+	- Declare the ExtentTest as global variable with static access modifier
+	
+3. Declare global variables testName, testDescription, testCategory, testAuthor and replace the hardcoded value with these variables	
+
+4. Create stopReport() in BaseClass with @AfterSuite
+	- add extent.flush()
+	
+5. Create reportStep() in BaseClass with 2 arguments (stepInfo, status)	
+	- Conditional statement to call appropriate method for pass and fail status
+	
+6. Call reportStep() from page methods
+		- from try block, call with pass status
+		- from catch block call with fail status
+		
+7. Create takeSnap() in BaseClass with necessary code to take snapshot with filename appending with Random number
+		- add return statement to give random number as output 
+		
+8. Call takeSnap() from reportStep() to attach the image to the steps
