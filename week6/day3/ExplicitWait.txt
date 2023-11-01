@@ -1,0 +1,50 @@
+Today's Agenda:
+--------------
+POM with Extent report
+Groups and Listener
+Explicit wait
+
+Implicit wait
+ -->
+global wait
+-->for all findElement and findElements
+Thread.sleep-->pause the execution -->java wait -->explicit wait
+Explicit wait
+------------
+ apply wait on a certain condititons
+ conditional wait 
+ click
+ visibility
+ alert to be present
+ frame to available
+ ---------------------
+ wait-10s
+ polling frequency -->500ms
+
+5ths
+WebDriverwait
+
+
+// To use multiple @FindBy -> AND condition
+		/*
+		 * @FindBys( {
+		 * 
+		 * @FindBy(how=How.CLASS_NAME, using="inputLogin123"), //will not find a match
+		 * in DOM
+		 * 
+		 * @FindBy(how=How.XPATH, using="//input[@id='username']") } )
+		 * 
+		 * WebElement eleUsername;
+		 */
+
+		// OR -> Condition
+		/*
+		 * @FindAll( {
+		 * 
+		 * @FindBy(how=How.CLASS_NAME, using="inputLogin123"), //will not find a match
+		 * in DOM
+		 * 
+		 * @FindBy(how=How.XPATH, using="//input[@id='username']") } )
+		 * 
+		 * WebElement eleUsername;
+		 */
