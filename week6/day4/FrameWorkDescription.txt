@@ -1,0 +1,44 @@
+Framework-Hybrid framework
+ ---------------------------
+  Framework built based on the design pattern PageObjectModel 
+    -->Integrated TestNg framework as execution framework to support the customization of execution flow
+	-->Support (external data source) data driven testing  using library Apache poi
+	-->Support BDD framework using cucumber
+	-->Support generating reports using Extent Report
+	-->Supports to generate fake datas using DataFaker library
+	-->supports using static data configuration using Java Properties files and Java Owner Configuration files
+	
+Components in the Framework:
+---------------------------
+Selenium.api.design -->Browser and Element interface 
+                              which hold the design of Browser related and Element related actions
+Selenium.api.base -->Selenium Base -Implementation class for the interfaces
+                  -->heart of the framework/library  -->hold wrapper methods
+Selenium.testNg.api.base-->To hold projectSpecificMethods -->common funtionality 
+						-->Retry Engiene-->holds retry logic for the failed testcases
+selenium.leaftaps.pages-->page objects based on the navigation of the application
+selenium.laftaps.testcases-->actual testcase to be executed 
+selenium.testng.Utils -->dataLibrary -->to read the excel data
+-->Reporter to generate the report using Extent Report
+
+Hierarchy of Execution classes:
+---------------------
+AbstractTestNgCcumberTest (Cucumber Execution)
+ DiverInstance( Manage the driver object) ->ThreadLocal config
+  Reporter -->to generate the report along snapshot 
+   SeleniumBase-->WrapperMethods 
+    ProjectSpecificMethod -->Pre and post condition funtionlity
+	   Pages   Testcases
+
+TestNg Hirerachy for execution flow:
+------------------------------------
+
+@BeforeSuite-->Reporter configuration
+ @BeforeTest -->to assign the data files/ test details values
+   @BeforeClass --> to read the test details
+   @DataProvider
+    @BeforeMethod-->PreCondition 
+     @Test-->actual testcase
+	@AfterMethod-->postCondition
+ @AfterSuite	 -->end the report
+
